@@ -14,9 +14,9 @@ class kwiggle {
   }
 
   kwiggle::config { 'kwiggle conf':
-    gears => '1',
-    color => 'red',
-    rack  => true,
-    path  => $kwiggle_dir,
+    gears       => '1',
+    color       => 'red',
+    rack        => true,
+    kwiggle_dir => $kwiggle_dir,
   }
 }
