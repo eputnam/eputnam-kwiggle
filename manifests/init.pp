@@ -9,7 +9,6 @@ class kwiggle {
 
   file {'kwiggle dir':
     path      => $kwiggle_dir,
-    directory => true,
     mode      => '0644',
   }
 
