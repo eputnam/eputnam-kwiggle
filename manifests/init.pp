@@ -8,8 +8,9 @@ class kwiggle {
   $kwiggle_dir = '/etc/kwiggle';
 
   file {'kwiggle dir':
-    path      => $kwiggle_dir,
-    mode      => '0644',
+    ensure => directory,
+    path   => $kwiggle_dir,
+    mode   => '0644',
   }
 
   kwiggle::config { 'kwiggle conf':
