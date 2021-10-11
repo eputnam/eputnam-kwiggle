@@ -13,6 +13,8 @@ class kwiggle {
     mode   => '0644',
   }
 
+  notify { "a notify from init.pp in the kwiggle module!": }
+
   kwiggle::config { 'kwiggle conf':
     gears       => '1',
     color       => 'red',
