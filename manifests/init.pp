@@ -12,6 +12,12 @@ class kwiggle {
     path   => $kwiggle_dir,
     mode   => '0644',
   }
+  
+  file {'another file':
+    ensure  => present,
+    path    => '/etc/anotherfile',
+    content => "hello world",
+  }
 
   notify { "a notify from init.pp in the kwiggle module!": }
 
