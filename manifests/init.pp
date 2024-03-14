@@ -14,7 +14,7 @@ class kwiggle {
   }
   
   file {'another file':
-    ensure  => present,
+    ensure  => absent,
     path    => '/etc/anotherfile',
     content => "hello world",
   }
