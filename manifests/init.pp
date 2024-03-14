@@ -12,7 +12,7 @@ class kwiggle {
     path   => $kwiggle_dir,
     mode   => '0644',
   }
-  
+
   file {'another file':
     ensure  => absent,
     path    => '/etc/anotherfile',
@@ -20,6 +20,8 @@ class kwiggle {
   }
 
   notify { "a notify from init.pp in the kwiggle module!": }
+
+  include kwiggle::service
 
   kwiggle::config { 'kwiggle conf':
     gears       => '1',
