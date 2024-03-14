@@ -21,7 +21,7 @@ class kwiggle {
 
   notify { "a notify from init.pp in the kwiggle module!": }
 
-  include kwiggle::service
+  kwiggle::service { 'service': }
 
   kwiggle::config { 'kwiggle conf':
     gears       => '1',
