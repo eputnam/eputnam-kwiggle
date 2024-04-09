@@ -3,4 +3,7 @@
 ---
 fixtures:
   forge_modules:
-#     stdlib: "puppetlabs/stdlib"
+     stdlib: "puppetlabs/stdlib"
+  repositories:
+    cd4pe_tests:
+      repo: "https://cd4peAzureDevOpsTest@dev.azure.com/cd4peAzureDevOpsTest/CD4PE%20Azure%20DevOps%20Test%20Project/_git/puppetlabs-cd4pe_tests"
