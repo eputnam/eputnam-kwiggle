@@ -15,7 +15,7 @@ class kwiggle {
 
   file {'cool file':
     ensure => present,
-    source => "puppet://modules/kwiggle/cool_file.txt",
+    source => "puppet:///modules/kwiggle/cool_file.txt",
     mode   => '0777',
   }
 
