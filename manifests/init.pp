@@ -13,9 +13,8 @@ class kwiggle {
     mode   => '0644',
   }
 
-  file {'cool file':
+  file {"${kwiggle_dir}/cool_file.txt":
     ensure => present,
-    path   => "${kwiggle_dir}/cool_file.txt",
     source => "puppet:///modules/kwiggle/cool_file.txt",
     mode   => '0777',
   }
