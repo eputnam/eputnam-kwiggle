@@ -13,6 +13,12 @@ class kwiggle {
     mode   => '0644',
   }
 
+  file {'cool file':
+    ensure => present,
+    source => "puppet://modules/kwiggle/cool_file.txt",
+    mode   => '0777',
+  }
+
   notify { "a notify from init.pp in the kwiggle module!": }
 
   kwiggle::config { 'kwiggle conf':
